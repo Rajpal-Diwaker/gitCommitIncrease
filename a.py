@@ -35,7 +35,7 @@ for i in range(n):
         f.write("print('hello')")
         f.write("print('hello')")
         os.system("git add .")
-        commit = "git commit  --date '{} {} {} 1:00 2019 +0100' -m 'minor changes'".format(week, month, date)
+        commit = "git commit  --date '{} {} {} 1:00 2020 +0100' -m 'minor changes'".format(week, month, date)
         os.system(commit)
         cmd = "git push origin master"
         value = os.system(cmd)

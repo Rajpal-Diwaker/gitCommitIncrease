@@ -3,7 +3,7 @@ import calendar
 import os
 import random
 
-n = 50
+n = 100
 months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']
 wd = {"Sunday":"Sun","Monday":"Mon","Tuesday":"Tue","Wednesday":"Wed","Thursday":"Thur","Friday":"Fri","Saturday":"Sat"}
 
@@ -35,7 +35,7 @@ for i in range(n):
         f.write("print('hello')")
         f.write("print('hello')")
         os.system("git add .")
-        commit = "git commit  --date '{} {} {} 1:00 2020 +0100' -m 'minor changes'".format(week, month, date)
+        commit = "git commit  --date '{} {} {} 1:00 2021 +0100' -m 'minor changes'".format(week, month, date)
         os.system(commit)
         cmd = "git push origin master"
         value = os.system(cmd)

@@ -17,7 +17,7 @@ def mounthcal(n):
     return months[n]
 
 for i in range(n):
-    a = datetime.datetime.today()-datetime.timedelta(days=5)
+    a = datetime.datetime.today()-datetime.timedelta(days=7)
     Previous_Date = a - datetime.timedelta(days=i)
     print(Previous_Date)
     date = Previous_Date.day
@@ -27,15 +27,15 @@ for i in range(n):
     # print(month)
     week = wdcal(str(calendar.day_name[Previous_Date.weekday()]))
     # print(week)
-    times = random.randrange(1, 2)
+    times = random.randrange(1, 5)
     f = open("temp.txt", "a")
     # print("working on" + date + week + month)
     for j in range(times):
-        f.write("print('hello')")
-        f.write("print('hello')")
-        f.write("print('hello')")
+        f.write("print('hello------')")
+        f.write("print('hello+++++')")
+        f.write("print('hello--------')")
         os.system("git add .")
-        commit = "git commit  --date '{} {} {} 1:00 2021 +0100' -m 'minor changes'".format(week, month, date)
+        commit = "git commit  --date '{} {} {} 1:00 2022 +0100' -m 'minor changes'".format(week, month, date)
         os.system(commit)
         cmd = "git push origin master"
         value = os.system(cmd)

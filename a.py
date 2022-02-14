@@ -17,7 +17,7 @@ def mounthcal(n):
     return months[n]
 
 for i in range(n):
-    a = datetime.datetime.today()-datetime.timedelta(days=7)
+    a = datetime.datetime.today()-datetime.timedelta(days=6)
     Previous_Date = a - datetime.timedelta(days=i)
     print(Previous_Date)
     date = Previous_Date.day
@@ -27,7 +27,7 @@ for i in range(n):
     # print(month)
     week = wdcal(str(calendar.day_name[Previous_Date.weekday()]))
     # print(week)
-    times = random.randrange(1, 5)
+    times = random.randrange(1, 2)
     f = open("temp.txt", "a")
     # print("working on" + date + week + month)
     for j in range(times):

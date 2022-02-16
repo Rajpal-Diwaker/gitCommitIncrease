@@ -17,7 +17,7 @@ def mounthcal(n):
     return months[n]
 
 for i in range(n):
-    a = datetime.datetime.today()-datetime.timedelta(days=6)
+    a = datetime.datetime.today()-datetime.timedelta(days=5)
     Previous_Date = a - datetime.timedelta(days=i)
     print(Previous_Date)
     date = Previous_Date.day
